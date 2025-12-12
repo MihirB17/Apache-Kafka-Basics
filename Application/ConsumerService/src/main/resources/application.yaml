@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: consumerservice
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+    consumer:
+      group-id: my-group
+
+server:
+  port: 9192
+
+kafka:
+  topic:
+    name: fullStackBankingProject
